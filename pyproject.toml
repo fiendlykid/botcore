@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "raqmu"
+version = "0.1.0"
+description = ""
+authors = ["Replit user <<>>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+red-discordbot = "3.5.5"
+discord-py = "2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
