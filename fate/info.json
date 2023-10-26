@@ -1,0 +1,14 @@
+{
+    "name": "Fate",
+    "short": "A dice roller for the FATE system.",
+    "description": "A dice roller for the FATE system.",
+    "end_user_data_statement": "This cog does not persistently store any data or metadata about users.",
+    "author": ["fiendlykid"],
+    "required_cogs": {},
+    "requirements": [],
+    "tags": [],
+    "min_bot_version": "3.5.0",
+    "hidden": false,
+    "disabled": false,
+    "type": "COG"
+}
