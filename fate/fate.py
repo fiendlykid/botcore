@@ -29,15 +29,11 @@ class FateRoller(commands.Cog):
     @commands.command(aliases=['f'])
     async def fate(self,
                    ctx: commands.Context,
-                   modifier: str | int | None = None) -> None:
+                   modifier: int | None = None) -> None:
         """Rolls 4dF and optionally adds a modifier.
 
         Fate/fudge dice (dF) are dice with values of -1, 0, and +1.
         """
-        # Convert modifier string to integer, if provided.
-        if modifier is not None:
-            modifier = int(modifier)
-
         # Roll 4dF.
         str_rolls = choices(['`-1`', '`0`', '`+1`'], k=4)
         num_rolls = [int(i.replace('`', '')) for i in str_rolls]
