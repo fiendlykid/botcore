@@ -1,7 +1,7 @@
 {
-    "name": "Petra",
-    "short": "Utility commands for the Petra campaign.",
-    "description": "Utility commands for the Petra campaign.",
+    "name": "Campaign",
+    "short": "Utility commands for our campaign.",
+    "description": "Utility commands for our campaign.",
     "end_user_data_statement": "This cog does not persistently store any data or metadata about users.",
     "author": ["fiendlykid"],
     "required_cogs": {},
