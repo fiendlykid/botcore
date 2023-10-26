@@ -36,9 +36,9 @@ PETRA_RACES = {
 }
 
 
-class Petra(commands.Cog):
+class Campaign(commands.Cog):
     """
-    Utility commands for the Petra campaign.
+    Utility commands for our campaign.
     """
 
     async def red_get_data_for_user(self, *, user_id):
@@ -52,7 +52,7 @@ class Petra(commands.Cog):
 
     @commands.command()
     async def character(self, ctx: commands.Context) -> None:
-        """Roll base ability scores for a new character using a custom formula.
+        """Roll base ability scores for a new character.
 
         Find the minimal and maximal sums of six roll sets.
         - A roll set is 5d6.
@@ -108,7 +108,7 @@ class Petra(commands.Cog):
     @petra.command()
     async def charge(self, ctx: commands.Context, travel_pace: int,
                      hours_charged: int):
-        """Calculate the number of miles traveled by a Core sand ship.
+        """Calculate the number of miles traveled by a sand ship.
     
         <base travel pace> <number of hours charged>
         """
@@ -125,7 +125,7 @@ class Petra(commands.Cog):
 
     @petra.command()
     async def race(self, ctx: commands.Context, n: int | None = 1):
-        """Randomly generate character races according to Petran demographics.
+        """Randomly generate character races for Petra.
 
         <optional, number>
         """
