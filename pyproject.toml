@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "raqmu"
+name = "botcore"
 version = "0.1.0"
 description = ""
 authors = ["Replit user <<>>"]
