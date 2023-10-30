@@ -1,10 +1,12 @@
-import contextlib
 from random import choices
 
 import discord
 from redbot.core import commands
 from redbot.core.bot import Red
 from redbot.core.config import Config
+
+import contextlib
+from typing import Union
 
 
 async def try_delete(message):
@@ -29,7 +31,7 @@ class FateRoller(commands.Cog):
     @commands.command(aliases=['f'])
     async def fate(self,
                    ctx: commands.Context,
-                   modifier: int | None = None) -> None:
+                   modifier: Union[int, None] = None) -> None:
         """Rolls 4dF and optionally adds a modifier.
 
         Fate/fudge dice (dF) are dice with values of -1, 0, and +1.
